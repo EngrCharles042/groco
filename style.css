@@ -25,6 +25,12 @@ html{
   overflow-x: hidden;
 }
 
+.show{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
 .firstHeader{
   background: #eee;
   display: flex;
@@ -90,6 +96,10 @@ html{
   font-size: 2.5rem;
 }
 
+.secondHeader .icons .fas{
+  color: #333;
+}
+
 .secondHeader .icons .fas:hover{
   color: var(--green);
 }
@@ -114,6 +124,10 @@ html{
 .secondHeader .navbar a:hover {
   color: rgb(255, 255, 255);
   background-color: var(--green);
+}
+
+.active{
+  display: block;
 }
 
 .home {
@@ -294,6 +308,11 @@ html{
   background: rgba(0,0,0,.05);
   border-radius: 50%;
   margin-top: .7rem;
+}
+
+.product .boxCon .box .icons a:hover {
+  background-color: var(--green);
+  color: #fff;
 }
 
 .product .boxCon .box .icons {
@@ -516,7 +535,6 @@ html{
 .footer .credit span {
   color: var(--green);
 }
-
 
 section{
   padding: 2rem;

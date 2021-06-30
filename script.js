@@ -1,4 +1,18 @@
-let countDownDate = new Date("Jul 25, 2021 16:37:52").getTime();
+const menu = document.querySelector('#menu-bar');
+const navbar = document.querySelector('.navbar');
+const icons = document.querySelectorAll('.icons');
+
+
+// menu.addEventListener('click', (e) => {
+    
+//     // navbar.classList.toggle('show');
+//     // navbar.style.display = 'flex';
+//     // navbar.style.flexDirection = 'column';
+//     // navbar.style.backgroundColor = '#ffffff'
+// })
+
+
+let countDownDate = new Date("Jul 30, 2021 16:37:52").getTime();
 
 let myTimer = setInterval(function () {
     let now = new Date().getTime();
@@ -14,7 +28,6 @@ let myTimer = setInterval(function () {
     document.getElementById("minute").innerHTML = minutes + "m "
     document.getElementById("second").innerHTML = seconds + "s"
 }, 1000)
-
 
 
 
