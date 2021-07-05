@@ -1,15 +1,11 @@
 const menu = document.querySelector('#menu-bar');
 const navbar = document.querySelector('.navbar');
 const icons = document.querySelectorAll('.icons');
+const header2 = document.querySelector('.secondHeader');
 
-
-// menu.addEventListener('click', (e) => {
-    
-//     // navbar.classList.toggle('show');
-//     // navbar.style.display = 'flex';
-//     // navbar.style.flexDirection = 'column';
-//     // navbar.style.backgroundColor = '#ffffff'
-// })
+menu.addEventListener('click', function () {
+    navbar.classList.toggle('shownav');
+})
 
 
 let countDownDate = new Date("Jul 30, 2021 16:37:52").getTime();
@@ -29,5 +25,14 @@ let myTimer = setInterval(function () {
     document.getElementById("second").innerHTML = seconds + "s"
 }, 1000)
 
+window.onscroll = function() {mySticky()};
 
+let sticky = header2.offsetTop;
 
+function mySticky() {
+    if (window.pageYOffset >= sticky) {
+      header2.classList.add("sticky")
+    } else {
+      header2.classList.remove("sticky");
+    }
+  }

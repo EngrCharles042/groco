@@ -23,12 +23,7 @@
 html{
   font-size: 62.5%;
   overflow-x: hidden;
-}
-
-.show{
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
+  scroll-behavior: smooth;
 }
 
 .firstHeader{
@@ -82,7 +77,14 @@ html{
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
-  position: relative;
+  position: relative
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .fa-bars{
@@ -91,6 +93,11 @@ html{
   border-radius: 0.5rem;
   padding: 0.64rem 1.2rem;
 }
+
+/* .fa-window-close{
+  font-size: 4rem;
+  padding: 1.64rem 1.2rem;
+} */
 
 .icons{
   font-size: 2.5rem;
@@ -112,6 +119,18 @@ html{
   background: var(--black);
   padding: 1rem 2rem;
   display: none;
+}
+
+.navbar a{
+  background-color: #ffffff;
+  margin: .5rem;
+  text-align: center;
+}
+
+.shownav{
+  display: flex;
+  flex-direction: column;
+  background: var(--black);
 }
 
 .secondHeader .navbar a {
@@ -395,7 +414,7 @@ html{
   font-size: 1.7rem;
   color: rgb(51, 51, 51);
   padding: 1rem 0px;
-  width: 50%;
+  width: 60%;
 }
 
 .deal .content .count-down {
