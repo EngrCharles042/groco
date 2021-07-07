@@ -91,13 +91,13 @@ html{
   font-size: 2.5rem;
   border: 0.1rem solid black;
   border-radius: 0.5rem;
-  padding: 0.64rem 1.2rem;
+  padding: .64rem 1.2rem;
 }
 
-/* .fa-window-close{
+.fa-window-close{
   font-size: 4rem;
-  padding: 1.64rem 1.2rem;
-} */
+  display: none;
+}
 
 .icons{
   font-size: 2.5rem;
@@ -143,10 +143,6 @@ html{
 .secondHeader .navbar a:hover {
   color: rgb(255, 255, 255);
   background-color: var(--green);
-}
-
-.active{
-  display: block;
 }
 
 .home {
@@ -559,6 +555,13 @@ section{
   padding: 2rem;
 }
 
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
 
 @media (min-width: 768px) {
 
